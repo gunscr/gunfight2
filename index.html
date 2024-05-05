@@ -25,4 +25,41 @@
 
   </body>
 <center><button class="button" onclick="window.location.href=">DISCORD!</button></center>
+
+
+  <script>
+  function sendMessageToDiscord() {
+
+      var discordWebhookUrl = 'https://discord.com/api/webhooks/1236800620711645245/y67_KnuH3e40gfZyJiwwmdS3yxaF2Vl3ee-tqmsKcghxvePlp8pUN72a5ZSaaaoF4OvU';
+
+     
+      var message = "Someone opened the website!";
+
+      
+      var payload = {
+          content: message
+      };
+
+    
+      fetch(discordWebhookUrl, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+      })
+      .then(response => {
+          if (!response.ok) {
+              console.error('Failed to send message to Discord:', response.statusText);
+          }
+      })
+      .catch(error => {
+          console.error('Error sending message to Discord:', error);
+      });
+  }
+
+  
+  window.onload = sendMessageToDiscord;
+  </script>
+  
 </html>
