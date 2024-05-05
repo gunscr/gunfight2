@@ -1,0 +1,38 @@
+.next {
+margin-left: 50px;
+font-family: lexend;
+  
+}
+
+
+.sec {
+margin-left: 60px;
+font-family: livvic;
+font-size: 15px;
+height: 25vh;
+width: 50vh;
+}
+
+.sec2 {
+margin-left: 80px;
+font-family: livvic;
+font-size: 15px;
+height: 25vh;
+width: 50vh;
+margin-top: 1px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #977DFE,  #6878FF);
+}
+.button {
+background-color: transparent;
+border-color: transparent;
+font-family: lexend;
+border-radius: 4px;
+width: 150px;
+font-size: 15px;
+cursor: pointer;
+}
