@@ -47,7 +47,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: linear-gradient(to right top, #977DFE,  #6878FF);
+  background: linear-gradient(to right top, #1898c3, #0080ff);
 }
 .button {
 background-color: transparent;
@@ -90,3 +90,21 @@ nav ul li a {
 nav ul li a:hover {
     background-color: transparent; 
 }
+
+
+nav ul li:first-child a {
+    padding-left: 30px; 
+    background-image: url('nervron_-removebg-preview.png'); 
+    background-repeat: no-repeat;
+    background-size: 50px; 
+    background-position: center left; 
+}
+
+.video-container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+
