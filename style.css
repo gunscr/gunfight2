@@ -4,6 +4,28 @@ font-family: lexend;
   
 }
 
+.neveron {
+  font-family: lexend;
+  display: inline-block;
+  animation: standout 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes standout {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transform: scale(1);
+    color: white;
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+    color: cyan;
+  }
+}
+
+
+
+
 
 .sec {
 margin-left: 60px;
@@ -33,6 +55,38 @@ border-color: transparent;
 font-family: lexend;
 border-radius: 4px;
 width: 150px;
-font-size: 15px;
+font-size: 25px;
 cursor: pointer;
+}
+
+
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: transparent; 
+}
+
+nav ul {
+    list-style-type: none; 
+    overflow: hidden; 
+}
+
+nav ul li {
+    float: left; 
+}
+
+nav ul li a {
+    display: block; 
+    color: white; 
+    text-decoration: none; 
+    padding: 20px;
+    font-family: lexend; 
+}
+
+nav ul li a:hover {
+    background-color: transparent; 
 }
