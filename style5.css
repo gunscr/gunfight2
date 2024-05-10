@@ -1,1 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right top, #2f3037, #000000);
+  text-align: right; /* Align text to the right */
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: transparent;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  font-family: lexend;
+}
+
+nav ul li a:hover {
+  background-color: transparent;
+}
+
+nav ul li:first-child a {
+  padding-left: 30px;
+  background-image: url('nervron_-removebg-preview.png');
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center left;
+}
+
+h1 {
+  color: white;
+  margin: 20px auto 10px; /* Adjust margin */
+  font-size: 24px; /* Adjust font size */
+  font-family: lexend;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  margin: 60px auto; /* Adjust margin */
+  margin-right: 0; /* Reset margin-right */
+  font-family: lexend;
+  word-wrap: break-word; /* or overflow-wrap: break-word; */
+  max-width: 600px; /* Adjust as needed */
+  text-align: right; /* Align text to the right */
+}
+
+
+button {
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: lexend;
+  margin-top: 20px; /* Adjust margin */
+  margin-right: 0; /* Reset margin-right */
+}
+
+button {
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: lexend;
+  margin-top: 10px; /* No change in margin */
+  margin-right: 0; /* Reset margin-right */
+  transition: background 0.3s ease, color 0.3s ease; /* Add smooth transition effect */
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
+
+#content {
+  display: none; /* Hide content initially */
+}
 
