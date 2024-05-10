@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-    <link rel="icon" href="IMG_2490.ico" type="image/x-icon">
-    
+<link rel="icon" href="IMG_2490.ico" type="image/x-icon">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style5.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-   <script src="scripts.js"></script>
-  <body>
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style5.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts.js"></script>
+
+<body>
+    </head>
 
     <nav>
         <ul>
@@ -28,62 +31,73 @@
     </nav>
 
     <div id="content">
-<h1 class="next">Ever dreamed about how you want a more amount of good roblox scripts and and executor script to come out? Well thats now here!</h1>
-   
-  <h2 class="sec">Have you ever thought of aimbotting or walbanging or even  aim botiing people? Well you're in luck with this script. This is the new so called next generation of scripts...</h2>
+        <h1 class="next">Ever dreamed about how you want a more amount of good roblox scripts and and executor script to
+            come out? Well thats now here!</h1>
+
+        <h2 class="sec">Have you ever thought of aimbotting or walbanging or even aim botiing people? Well you're in
+            luck with this script. This is the new so called next generation of scripts...</h2>
     </div>
-    
-    
-<center><a href="about.html"><button>Learn More!</button></a></center>
-    
 
 
-  <<body>
-        <div id="loading-container">
-            <span id="loading-text"></span>
+    <a href="about.html"><button>Learn More!</button></a>
+    <a href="https://discord.gg/rUbSp28CmA"><button>Join the discord!</button></a>
+
+    <body>
+        <div id="loading-screen">
+            <div class="text"><span id="typing-animation"></span></div>
         </div>
+        <div id="content" style="display:none;">
+            <!-- Your website content here -->
+            <h1>Welcome to My Website</h1>
+            <p>This is the content of my website.</p>
+        </div>
+
+        <body>
+            <div id="loading-container">
+                <span id="loading-text"></span>
+            </div>
+            <script src="script.js"></script>
+        </body>
+
+
+
+        <script>
+            function sendMessageToDiscord() {
+
+                var discordWebhookUrl = 'https://discord.com/api/webhooks/1236800620711645245/y67_KnuH3e40gfZyJiwwmdS3yxaF2Vl3ee-tqmsKcghxvePlp8pUN72a5ZSaaaoF4OvU';
+
+
+                var message = "Someone opened the website!";
+
+
+                var payload = {
+                    content: message
+                };
+
+
+                fetch(discordWebhookUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload),
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            console.error('Failed to send message to Discord:', response.statusText);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error sending message to Discord:', error);
+                    });
+            }
+
+
+            window.onload = sendMessageToDiscord;
+        </script>
+
+
+
         <script src="script.js"></script>
-    </body>
 
-
-
-  <script>
-  function sendMessageToDiscord() {
-
-      var discordWebhookUrl = 'https://discord.com/api/webhooks/1236800620711645245/y67_KnuH3e40gfZyJiwwmdS3yxaF2Vl3ee-tqmsKcghxvePlp8pUN72a5ZSaaaoF4OvU';
-
-     
-      var message = "Someone opened the website!";
-
-      
-      var payload = {
-          content: message
-      };
-
-    
-      fetch(discordWebhookUrl, {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(payload),
-      })
-      .then(response => {
-          if (!response.ok) {
-              console.error('Failed to send message to Discord:', response.statusText);
-          }
-      })
-      .catch(error => {
-          console.error('Error sending message to Discord:', error);
-      });
-  }
-
-  
-  window.onload = sendMessageToDiscord;
-  </script>
-
-    
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
-    
 </html>
