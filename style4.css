@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(to right top, #8e1a1a, #6105ff);
+   background: linear-gradient(to right top, #2f3037, #000000);
   font-family: lexend;
 }
 
@@ -68,7 +68,7 @@ h1,
 
 p {
   font-size: 30px;
-  color: black;
+  color: white;
   width: 75%;
   font-weight: 700;
   font-size: 30px;
@@ -80,7 +80,10 @@ p {
 table {
 
 border: 4px;
-border-color: black;
-
+border-color: white;
+color: white;
 }
 
+#content {
+  display: none; /* Hide content initially */
+}
