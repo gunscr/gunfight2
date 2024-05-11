@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right top, #2f3037, #000000);
+  text-align: left; /* Align text to the left */
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: transparent;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left; /* Change float direction to left */
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  font-family: lexend;
+}
+
+nav ul li a:hover {
+  background-color: transparent;
+}
+
+nav ul li:first-child a {
+  padding-left: 30px;
+  background-image: url('nervron_-removebg-preview.png');
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center left;
+}
+
+header {
+
+font-family: lexend;
+color: white;
+font-weight: bold;
+font-size: 28px;
+}
+
+h1 {
+
+  font-family: lexend;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left; /* Align text to the left */
+  font-weight: bolder;
+  word-wrap: break-word; /* or overflow-wrap: break-word; */
+  max-width: 500px;
+}
